@@ -24,7 +24,15 @@ const LoginForm = () => {
             </div>
             <button type="submit">Login</button>
             <div className="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
+                <div className="input-box">
+                <input type="date of birth" placeholder='Date of birth' required/>
+                 
+            </div>
+              <div className="register-link">
+                <div className="text">
+                <input type="email" placeholder='Email' required/>
+                 
+            </div>
             </div>
         </form>
        
