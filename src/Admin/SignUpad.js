@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './SignUpad.css'; // Assuming you have a separate CSS file for admin signup styles
+import './SignUpad.css';
 
 const SignUpad = () => {
   const navigate = useNavigate();

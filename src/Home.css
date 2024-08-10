@@ -23,8 +23,8 @@
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #fcfeff, #f9fcff);
-    color: #fff;
+    background: linear-gradient(135deg, #0967f5, #f9fcff);
+    color: #2e2d2d;
     text-decoration: none;
     border-radius: 8px;
     transition: 0.3s ease, transform 0.3s ease;

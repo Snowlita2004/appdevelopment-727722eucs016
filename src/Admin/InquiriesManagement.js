@@ -1,7 +1,7 @@
-// src/components/ResponseManagement.js
+
 import React, { useState } from 'react'; 
 import './InquiriesManagement.css'
- // Correct CSS file import
+
 
 const sampleResponses = [
     { id: 1, name: 'John Doe', response: 'Inquiry about admission process.', date: '2024-07-25' },
@@ -14,40 +14,35 @@ const ResponseManagement = () => {
     const [selectedResponse, setSelectedResponse] = useState(null);
     const [form, setForm] = useState({ name: '', response: '', date: '' });
 
-    // Handle search
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
     };
 
-    // Handle form changes
     const handleFormChange = (e) => {
         const { name, value } = e.target;
         setForm({ ...form, [name]: value });
     };
 
-    // Handle form submission
     const handleFormSubmit = (e) => {
         e.preventDefault();
         if (selectedResponse) {
-            // Update existing response
+           
             setResponses(responses.map(resp =>
                 resp.id === selectedResponse.id ? { ...resp, ...form } : resp
             ));
         } else {
-            // Add new response
+          
             setResponses([...responses, { ...form, id: responses.length + 1 }]);
         }
         setForm({ name: '', response: '', date: '' });
         setSelectedResponse(null);
     };
 
-    // Handle edit response
     const handleEdit = (response) => {
         setForm(response);
         setSelectedResponse(response);
     };
 
-    // Handle delete response
     const handleDelete = (id) => {
         setResponses(responses.filter(response => response.id !== id));
     };

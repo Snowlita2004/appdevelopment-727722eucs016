@@ -1,27 +1,27 @@
-/* Main Header */
+  /* Main Header */
 .main-head {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow for better visibility */
     transition: background-color 0.3s;
 }
 
 .main-head img {
-    margin-right: 20px;
+    margin-right: 25px; /* Increased margin for more spacing */
 }
 
 .main-heading {
-    font-size: 30px;
-    font-weight: bolder;
-    color: #333;
+    font-size: 34px; /* Larger font size */
+    font-weight: bold; /* Bold font weight for prominence */
+    color: #1e272e; /* Dark color for a modern look */
 }
 
 /* Navbar */
 .navbar {
-    background-color: #343a40; /* Dark background for navbar */
+    background-color: #1e272e; /* Darker background for navbar */
 }
 
 .navbar-toggler {
@@ -33,36 +33,34 @@
 }
 
 .nav-link {
-    font-size: 16px;
-    color: #fff; /* Ensures the link color is white */
+    font-size: 18px; /* Larger font size for better readability */
+    color: #d1d8e0; /* Light gray color for better contrast on dark background */
 }
 
 .nav-link:hover {
-    text-decoration: underline; /* Changed to underline for a clearer hover effect */
+    text-decoration: none; /* Removed underline for a cleaner hover effect */
+    color: #808e9b; /* Gray color for hover effect */
 }
 
 /* Spacing between navbar items */
 .navbar-nav .nav-item {
-    margin-right: 15px; /* Adjust this value for more or less space */
+    margin-right: 25px; /* Increased space for a more open layout */
 }
 
 /* Dropdown Menu */
 .dropdown-menu {
-    background-color: #343a40; /* Match the navbar background */
+    background-color: #1e272e; /* Match the navbar background */
 }
 
 .dropdown-item {
-    color: #fff;
+    color: #d1d8e0; /* Light gray text color */
 }
 
 .dropdown-item:hover {
-    background-color: #495057;
+    background-color: #2f3640; /* Slightly lighter background on hover */
 }
 
 /* Centering the logout link */
 .navbar-nav.ms-auto .nav-item {
-    margin-left: auto; /* This will push it to the far right */
+    margin-left: auto; /* Pushes the logout link to the far right */
 }
-
-
-

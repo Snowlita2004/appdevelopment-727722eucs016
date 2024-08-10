@@ -1,4 +1,4 @@
-/* src/components/ResponseManagement.css */
+
 
 .response-management-container {
     padding: 20px;
@@ -9,11 +9,11 @@
 h1, h2 {
     color: #333;
     margin-bottom: 20px;
-    text-align: center; /* Center-align the headings */
+    text-align: center; 
 }
 
 input[type="text"], textarea, input[type="date"] {
-    width: calc(100% - 22px); /* Full width minus padding */
+    width: calc(100% - 22px); 
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -83,11 +83,11 @@ button.delete-button:hover {
     background-color: #c82333;
 }
 .input-container, .form-container {
-    max-width: 800px; /* Set a maximum width for the form container */
-    width: 100%; /* Ensure it takes up full width of its parent */
-    margin: 20px auto; /* Center the container horizontally */
+    max-width: 800px;
+    width: 100%; 
+    margin: 20px auto; 
     padding: 20px;
-    background-color: #fff; /* White background for the form container */
+    background-color: #fff; 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

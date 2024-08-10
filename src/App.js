@@ -37,11 +37,22 @@ import Homead from "./Admin/Homead";
 import ResponseManagement from "./Admin/InquiriesManagement";
 import InquiryAssignment from "./Admin/InquiryAssignment";
 import PrioritySetting from "./Admin/PrioritySetting";
+import AdminDashboard from "./Admin/AdminDash";
+import StatusTracking from "./StausTracking";
 
 
 function App() {
   const [loading, setloading] = useState(false)
 
+
+
+
+
+
+
+
+
+  
   useEffect(() => {
     setloading(true)
     setTimeout(() => {
@@ -95,6 +106,8 @@ function App() {
           <Route path='/adminresponse' element={<ResponseManagement/>}/>
           <Route path='/adminassignment' element={<InquiryAssignment/>}/>
           <Route path='/adminsetting' element={<PrioritySetting/>}/>
+          <Route path='/AdminDashboard' element={<AdminDashboard/>}/>
+          <Route path='/StatusTracking' element={<StatusTracking/>}/>
        
         </Routes>
         

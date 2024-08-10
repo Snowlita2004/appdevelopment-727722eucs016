@@ -1,19 +1,19 @@
-// src/components/InquiryAssignment.js
+
 import React, { useState } from 'react';
 import './InquiryAssignment.css';
 
-// Sample data
+
 const sampleInquiries = [
     { id: 1, name: 'Alice Johnson', inquiry: 'Request for product information.', date: '2024-07-28', assignedTo: 'Not Assigned' },
     { id: 2, name: 'Bob Brown', inquiry: 'Issue with recent order.', date: '2024-07-29', assignedTo: 'Not Assigned' },
 ];
 
-// Sample departments or individuals
+
 const sampleAssignments = [
-    'Sales Department',
+    'Admin',
     'Support Team',
-    'John Doe',
-    'Jane Smith'
+    'Staff',
+    'Scholarship'
 ];
 
 const InquiryAssignment = () => {
@@ -22,22 +22,18 @@ const InquiryAssignment = () => {
     const [selectedInquiry, setSelectedInquiry] = useState(null);
     const [form, setForm] = useState({ assignedTo: '' });
 
-    // Handle search
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
     };
 
-    // Handle form changes
     const handleFormChange = (e) => {
         const { name, value } = e.target;
         setForm({ [name]: value });
     };
 
-    // Handle form submission
     const handleFormSubmit = (e) => {
         e.preventDefault();
         if (selectedInquiry) {
-            // Update existing inquiry assignment
             setInquiries(inquiries.map(inquiry =>
                 inquiry.id === selectedInquiry.id ? { ...inquiry, assignedTo: form.assignedTo } : inquiry
             ));
@@ -46,7 +42,6 @@ const InquiryAssignment = () => {
         setSelectedInquiry(null);
     };
 
-    // Handle edit inquiry assignment
     const handleEdit = (inquiry) => {
         setForm({ assignedTo: inquiry.assignedTo });
         setSelectedInquiry(inquiry);

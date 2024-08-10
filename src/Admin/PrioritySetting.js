@@ -1,8 +1,8 @@
-// src/components/PrioritySetting.js
+
 import React, { useState } from 'react';
 import './PrioritySetting.css';
 
-// Sample data
+
 const sampleInquiries = [
     { id: 1, name: 'John Doe', inquiry: 'Admission process query.', priority: 'Medium', date: '2024-07-25' },
     { id: 2, name: 'Jane Smith', inquiry: 'Course prerequisites question.', priority: 'High', date: '2024-07-26' },
@@ -14,40 +14,36 @@ const PrioritySetting = () => {
     const [selectedInquiry, setSelectedInquiry] = useState(null);
     const [form, setForm] = useState({ name: '', inquiry: '', priority: '', date: '' });
 
-    // Handle search
+
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
     };
 
-    // Handle form changes
     const handleFormChange = (e) => {
         const { name, value } = e.target;
         setForm({ ...form, [name]: value });
     };
 
-    // Handle form submission
     const handleFormSubmit = (e) => {
         e.preventDefault();
         if (selectedInquiry) {
-            // Update existing inquiry
+ 
             setInquiries(inquiries.map(inc =>
                 inc.id === selectedInquiry.id ? { ...inc, ...form } : inc
             ));
         } else {
-            // Add new inquiry
+ 
             setInquiries([...inquiries, { ...form, id: inquiries.length + 1 }]);
         }
         setForm({ name: '', inquiry: '', priority: '', date: '' });
         setSelectedInquiry(null);
     };
 
-    // Handle edit inquiry
     const handleEdit = (inquiry) => {
         setForm(inquiry);
         setSelectedInquiry(inquiry);
     };
 
-    // Handle delete inquiry
     const handleDelete = (id) => {
         setInquiries(inquiries.filter(inquiry => inquiry.id !== id));
     };

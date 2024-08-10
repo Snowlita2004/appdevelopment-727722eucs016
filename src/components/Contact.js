@@ -29,14 +29,9 @@ const InquirySubmission = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item active">
-          <Link className="nav-link text-light navhover" to="/Home">Status Tracking</Link>
+          <Link className="nav-link text-light navhover" to="/StatusTracking">Status Tracking</Link>
           </li>
-          <li className="nav-item active">
-          <Link className="nav-link text-light navhover" to="/Profile">Inquiry History</Link>
-          </li>
-          <li className="nav-item active">
-          <Link className="nav-link text-light navhover" to="/Home">Inquiry Management</Link>
-          </li>
+          
           <li className="nav-item">
             <Link className="nav-link text-light navhover" to="/Login">LogOut</Link>
         </li>

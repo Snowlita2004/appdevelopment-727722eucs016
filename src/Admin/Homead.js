@@ -8,7 +8,7 @@ const Homead = () => {
 
     const styles = {
         body: {
-            backgroundImage: 'url(https://i.pinimg.com/564x/92/fe/04/92fe046fe9f4098e02ffdb903dce0970.jpg)', // Update this URL to your image path
+            backgroundImage: 'url(  https://images5.alphacoders.com/132/1327980.png)', // Update this URL to your image path
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             height: '100vh',
@@ -59,7 +59,7 @@ const Homead = () => {
                                 <Link className="nav-link text-light" style={styles.navHover} to="/Homead">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link text-light" style={styles.navHover} to="/admin-dash">Admin Dashboard</Link>
+                                <Link className="nav-link text-light" style={styles.navHover} to="/AdminDashBoard">Admin Dashboard</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link text-light" style={styles.navHover} to="/adminassignment">Inquiry Assignment</Link>
@@ -80,8 +80,15 @@ const Homead = () => {
                 </div>
             </nav>
             
-            
         </div>
+            <div className='main-container'>
+                <div className=" home-container">
+                    <h2 className='my-4 home-heading text-center'  to="academics">Welcome</h2>
+                    <p>National College of Technology  is situated in chennai TamilNadu. National College of Technology   is under Anna University. Location of NEC is Anna Nagar Chennai TamilNadu</p>
+                    <b>Institute Type: Private </b>
+                    <p>Private college is leading educational organisation in india. Teaching facualty of Private ITI is suprimo. ITI is providing latest Job oriented course for student. This Private ITI is powerd by <b>'Ministry of Skill Development and Entrepreneurship, Government of India for Craftsmen Training Scheme.</b> ITI is registered by government under<b>NCVT.</b></p>
+                </div>
+            </div>
             <Footer />
             </>
     );

@@ -6,7 +6,7 @@ const AdminLogin = () => {
   const navigate = useNavigate();
 
   const goToAdminDashboard = () => {
-    navigate('/Homead'); // Adjust the navigation path to the admin dashboard
+    navigate('/Homead'); 
   };
 
   return (
